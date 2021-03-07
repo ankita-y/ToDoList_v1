@@ -1,0 +1,9 @@
+<h3>Update item in list</h3>
+
+<form method="POST" class="post-form">
+    {% csrf_token %}
+    <p>{{ form.title }}</p>
+    <p>{{ form.desc }} </p>
+    <input type="submit" name="Update list">
+    <a href="/">Cancel</a>
+</form>
